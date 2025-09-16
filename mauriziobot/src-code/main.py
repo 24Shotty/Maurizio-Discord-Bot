@@ -5,7 +5,7 @@ from discord.ext import commands
 import random
 import datetime
 
-load_dotenv(dotenv_path="C:/Users/ricca/OneDrive/mauriziobot/src-code/.env")
+load_dotenv(dotenv_path="C:/Users/ricca/OneDrive/mauriziobot/src-code/.env") # Qua dovrete inserire il vostro percorso, in questo caso ho messo il mio.
 
 api_key = os.getenv("API_KEY")
 intents = discord.Intents.all()
@@ -39,3 +39,4 @@ async def ora(ctx):
     await ctx.send(f"Ora attuale: **{adesso}**")
 
 bot.run(api_key)
+
